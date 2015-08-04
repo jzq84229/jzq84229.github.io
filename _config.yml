@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: Jzq84229
+url: http://jzq84229.github.io
+feed: /atom.xml
+author_info: <a href="http://jzq84229.github.io/">Jzq84229</a>
