@@ -6,7 +6,7 @@ exclude:
   - README.md
 
 name: Jun
-host: yourdomain.com
+host: jzq84229.github.io
 desc: Some description of your site.
 
 custom:
@@ -26,7 +26,7 @@ meta:
     author:
         name: Jun
         email: your-email@example.com
-        disqus: your-disqus-short-name              # Disqus缩略标识
+        disqus: jzh                                 # Disqus缩略标识
         gcse: 012651674471710951982:gsattlz1pkk     # Google自定义搜索标识ID
         github: zhjmouse@gmail.com                  # GitHub账号
         gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar头像标识
