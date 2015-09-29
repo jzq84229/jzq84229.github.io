@@ -1,0 +1,33 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: Jun
+  email: zhjmouse@gmail.com
+  link: http://jzq84229.github.io
+  weibo: http://weibo.com/yansu0711
+  github: http://github.com/jzq84229
+
+# 站点信息
+title: Jun
+description: Jun的代码笔记
+url: http://jzq84229.github.io
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: http://www.gravatar.com/avatar/5b7d88240e1e2b9755ac9fca17d5cd8e
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-66208420-1
+  url: jzq84229.github.io
+
+# disqus 设置
+disqus:
+  shortname: jzh
