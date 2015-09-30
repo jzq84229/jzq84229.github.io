@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SVG笔记
-category: 技术
-tags: SVG
+title: SVG 常用资源
+category: 资源
+tags: svg
 keywords: svg
 description:
 ---

@@ -10,7 +10,7 @@ description:
 几乎所有的应用都要提另外的特殊资源来适配特殊配置的设备。例如：你必须提供不同尺寸的图片资源以适配不同屏幕密度的设备；你需要提供多个string资源文件以支持国际化。Android会根据当前设备的配置来加载适当的资源。
 
 ## 一. Android资源文件夹命名规则
-android资源文件夹默认的命名见[Providing Resources][providing resources]的table1
+android资源文件夹默认的命名见[Providing Resources][1]的table1
 
 创建指定的具体资源文件：
 
@@ -24,7 +24,7 @@ android资源文件夹默认的命名见[Providing Resources][providing resource
 2. 特殊资源目录中资源文件名称必须与默认资源目录下的资源文件名称相同。
 
 Table2按优先级列出了所有限定条件。如果你的资源目录用到了多个限定条件，你必须按下表的名称顺命名。  
-Table2. 限定条件名称(详见[Providing Resources][providing resources]的table2)
+Table2. 限定条件名称(详见[Providing Resources][1]的table2)
 
 |Configuration|Quanlifier Values|Description|
 |:---|:---|:---|
@@ -148,10 +148,10 @@ drawable-en-port/
 参考资料
 
 ---
-[http://developer.android.com/guide/topics/resources/providing-resources.html][providing resources]   
+[http://developer.android.com/guide/topics/resources/providing-resources.html][1]   
 [http://developer.android.com/guide/practices/screens_support.html](http://developer.android.com/guide/practices/screens_support.html)    
 [http://ivan-ru.iteye.com/blog/1711414](http://ivan-ru.iteye.com/blog/1711414)   
 [http://www.cnblogs.com/idealgrass/p/4271272.html](http://www.cnblogs.com/idealgrass/p/4271272.html)  
 
 
-[providing resources]:http://developer.android.com/guide/topics/resources/providing-resources.html
+[1]:http://developer.android.com/guide/topics/resources/providing-resources.html
