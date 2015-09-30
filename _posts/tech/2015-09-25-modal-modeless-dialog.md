@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 模态与非模态对话框
-category: Android
-tags: Android
+category: 技术
+tags: dialog
 keywords:
 description:
 ---
