@@ -8,6 +8,7 @@ description:
 ---
 
 ## Introduction(简介)
+
 ### Goals of the new Build System（gradle构建系统的目标）
 - 更加容易重用代码和资源。
 - 更加容易创建应用程序的不同版本，无论是多个apk发布版本还是同一个应用的不同定制版本。
@@ -26,6 +27,7 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
 - 良好的API工具供IDE集成。
 
 ## Android Studio项目目录结构
+
 ### Project结构类型
 ![Alt Text](http://7xn4nm.com1.z0.glb.clouddn.com/18501-35faada14c776733.png)
 
@@ -50,6 +52,7 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
 
 ## Basic Project(基本项目)
 一个Gradle项目的构建过程定义在项目根目录下的build.gradle文件中。
+
 ### Simple build files(简单的构建文件)
 一个最简单的Gradle纯Java项目的build。gradle文件包含以下内容：
 
@@ -91,6 +94,7 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
 - **android:** 配置了所有android构建过程需要的参数。这也是AndroidDSL的入口点。
 
 ## 实例讲解
+
 ### settings.gradle
 
     include ':app'
