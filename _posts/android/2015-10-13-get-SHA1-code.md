@@ -1,23 +1,23 @@
 ---
 layout: post
-title: »ñÈ¡KeyStore SHA1Âë
+title: è·å–KeyStore SHA1ç 
 category: Android
 tags: keystore
 keywords: keystore,sha1
 description:
 ---
 
-keystoreµÄSHA1£¬¸ñÊ½Èç£º
+keystoreçš„SHA1ï¼Œæ ¼å¼å¦‚ï¼š
 
     SHA1: 9D:66:68:DB:D1:96:39:3D:CA:5D:06:3D:BC:8B:87:34:99:7E:29:06
 
-ÔÚcmdÃüÁîĞĞÖĞ²éÑ¯SHA1Âë£º
+åœ¨cmdå‘½ä»¤è¡Œä¸­æŸ¥è¯¢SHA1ç ï¼š
 
-1. ´ò¿ªcmdÃüÁîÊäÈë¿ò¡£
-2. ½øÈëkeystoreÎÄ¼şÄ¿Â¼¡£ÒÔÄ¬ÈÏdebug.keystoreÎªÀı£¬ÔÚµ±Ç°ÓÃ»§Ä¿Â¼µÄ.adnroidÄ¿Â¼ÏÂ¡£
-3. ÊäÈëÃüÁî
+1. æ‰“å¼€cmdå‘½ä»¤è¾“å…¥æ¡†ã€‚  
+2. è¿›å…¥keystoreæ–‡ä»¶ç›®å½•ã€‚ä»¥é»˜è®¤debug.keystoreä¸ºä¾‹ï¼Œåœ¨å½“å‰ç”¨æˆ·ç›®å½•çš„.adnroidç›®å½•ä¸‹ã€‚  
+3. è¾“å…¥å‘½ä»¤
 
         keytool -list -v -keystore debug.keystore
     
-    ¸ù¾İÌáÊ¾ÊäÈëÃØÔ¿¿ÚÁî(Ä¬ÈÏÃ»ÓĞ)£¬°´»Ø³µ£¬µÃµ½debug.keystoreµÄÇ©ÃûÏêÇé¡£  
+    æ ¹æ®æç¤ºè¾“å…¥ç§˜é’¥å£ä»¤(é»˜è®¤æ²¡æœ‰)ï¼ŒæŒ‰å›è½¦ï¼Œå¾—åˆ°debug.keystoreçš„ç­¾åè¯¦æƒ…ã€‚  
     ![keystore info](/assets/images/keystore-info.jpg)
