@@ -7,10 +7,12 @@ keywords: ViewPager
 description:
 ---
 
+
 在ListView的Item中嵌入ViewPager，在滑动屏幕时会产生冲突。
 重写ViewPager的Touch分发事件，根据滑动位置判断touch动作是由自己处理还是传递给父控件。
 
 注：以下代码转自[孤云][1]
+    
     
     /** 
      * @Description: 嵌入ListView的ViewPager
