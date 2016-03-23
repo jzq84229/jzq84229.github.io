@@ -14,22 +14,27 @@ description:
 注：以下代码转自[孤云][1]
 
 
+	/** 
+	 * @Description: 嵌入ListView的ViewPager
+	 * 重写dispatchTouchEvent判断ViewPager滑动还是ListView滑动
+	 */
 	public class MyViewPager extends ViewPager {
-	//使用此方会拦截所有ViewPager的touch事件，使父控件ListView无法滑动
-	//    public MyViewPager(Context context) {
-	//        super(context);
-	//    }
-	//    
-	//    public MyViewPager(Context context, AttributeSet attrs) {
-	//        super(context, attrs);
-	//    }
-	//
-	//    @Override
-	//    public boolean dispatchTouchEvent(MotionEvent ev) {
-	//        getParent().requestDisallowInterceptTouchEvent(true);//这句话的作用 告诉父view，我的单击事件我自行处理，不要阻碍我。
-	//	    return super.dispatchTouchEvent(ev);
-	//	}
+		/*
+		//使用此方会拦截所有ViewPager的touch事件，使父控件ListView无法滑动
+	    public MyViewPager(Context context) {
+	        super(context);
+	    }
+	    
+	    public MyViewPager(Context context, AttributeSet attrs) {
+	        super(context, attrs);
+	    }
 	
+	    @Override
+	    public boolean dispatchTouchEvent(MotionEvent ev) {
+	        getParent().requestDisallowInterceptTouchEvent(true);//这句话的作用 告诉父view，我的单击事件我自行处理，不要阻碍我。
+		    return super.dispatchTouchEvent(ev);
+		}
+		*/
 	    
 	
 		private float xDown;// 记录手指按下时的横坐标。
@@ -63,7 +68,7 @@ description:
 				}
 	
 				// 这里的动作判断是Viewpager滑动,ListView不滑动
-				if (Math.abs(yMove - yDown) < 10 && Math.abs(xMove - xDown) > 20) {
+				if (Math.abs(yMove - yDown) < 20 && Math.abs(xMove - xDown) > 20) {
 					viewpagersroll = true;
 				} else {
 					// 由父容器listview来处理滑动效果
@@ -75,7 +80,6 @@ description:
 			return super.dispatchTouchEvent(ev);
 		}
 	}
-
 
 
 [1]:http://blog.csdn.net/u010142437/article/details/22307287

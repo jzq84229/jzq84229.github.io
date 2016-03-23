@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-_site
-*Thumbs.db
-.DS_Store
-
-jzq84229.github.io.iml
-.idea
-=======
-/.idea
-/jzq84229.github.io.iml
-# Created by .ignore support plugin (hsz.mobi)
-### Jekyll template
 _site/
-.sass-cache/
-.jekyll-metadata
-
->>>>>>> d6ad716b45dc31dbdd1bc84593d896890dec571a
+_drafts/
+.DS_Store
+.idea/
