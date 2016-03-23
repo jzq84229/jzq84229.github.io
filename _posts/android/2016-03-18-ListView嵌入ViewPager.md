@@ -3,7 +3,7 @@ layout: post
 title: ListView嵌入ViewPager
 category: Android
 tags: Android
-keywords: ViewPager
+keywords: viewpager
 description:
 ---
 
@@ -12,7 +12,6 @@ description:
 重写ViewPager的Touch分发事件，根据滑动位置判断touch动作是由自己处理还是传递给父控件。
 
 注：以下代码转自[孤云][1]
-    
     
     /** 
      * @Description: 嵌入ListView的ViewPager
@@ -64,16 +63,14 @@ description:
     				// 由父容器listview来处理滑动效果
     				return false;
     			}
-    
     		} else if (ev.getAction() == MotionEvent.ACTION_UP) {
     			viewpagersroll = false;
     		}
-    
     		return super.dispatchTouchEvent(ev);
     	}
-    
     }
 
+---
 
 
 [1]:http://blog.csdn.net/u010142437/article/details/22307287
