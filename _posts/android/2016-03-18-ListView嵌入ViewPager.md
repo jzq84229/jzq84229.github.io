@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ListViewÇ¶ÈëViewPager
+title: ListViewåµŒå…¥ViewPager
 category: Android
 tags: Android
 keywords: viewpager
@@ -8,14 +8,14 @@ description:
 ---
 
 
-ÔÚListViewµÄItemÖĞÇ¶ÈëViewPager£¬ÔÚ»¬¶¯ÆÁÄ»Ê±»á²úÉú³åÍ»¡£
-ÖØĞ´ViewPagerµÄTouch·Ö·¢ÊÂ¼ş£¬¸ù¾İ»¬¶¯Î»ÖÃÅĞ¶Ïtouch¶¯×÷ÊÇÓÉ×Ô¼º´¦Àí»¹ÊÇ´«µİ¸ø¸¸¿Ø¼ş¡£
+åœ¨ListViewçš„Itemä¸­åµŒå…¥ViewPagerï¼Œåœ¨æ»‘åŠ¨å±å¹•æ—¶ä¼šäº§ç”Ÿå†²çªã€‚
+é‡å†™ViewPagerçš„Touchåˆ†å‘äº‹ä»¶ï¼Œæ ¹æ®æ»‘åŠ¨ä½ç½®åˆ¤æ–­touchåŠ¨ä½œæ˜¯ç”±è‡ªå·±å¤„ç†è¿˜æ˜¯ä¼ é€’ç»™çˆ¶æ§ä»¶ã€‚
 
-×¢£ºÒÔÏÂ´úÂë×ª×Ô[¹ÂÔÆ][1]
+æ³¨ï¼šä»¥ä¸‹ä»£ç è½¬è‡ª[å­¤äº‘][1]
 
 
 	public class MyViewPager extends ViewPager {
-	//Ê¹ÓÃ´Ë·½»áÀ¹½ØËùÓĞViewPagerµÄtouchÊÂ¼ş£¬Ê¹¸¸¿Ø¼şListViewÎŞ·¨»¬¶¯
+	//ä½¿ç”¨æ­¤æ–¹ä¼šæ‹¦æˆªæ‰€æœ‰ViewPagerçš„touchäº‹ä»¶ï¼Œä½¿çˆ¶æ§ä»¶ListViewæ— æ³•æ»‘åŠ¨
 	//    public MyViewPager(Context context) {
 	//        super(context);
 	//    }
@@ -26,17 +26,17 @@ description:
 	//
 	//    @Override
 	//    public boolean dispatchTouchEvent(MotionEvent ev) {
-	//        getParent().requestDisallowInterceptTouchEvent(true);//Õâ¾ä»°µÄ×÷ÓÃ ¸æËß¸¸view£¬ÎÒµÄµ¥»÷ÊÂ¼şÎÒ×ÔĞĞ´¦Àí£¬²»Òª×è°­ÎÒ¡£
+	//        getParent().requestDisallowInterceptTouchEvent(true);//è¿™å¥è¯çš„ä½œç”¨ å‘Šè¯‰çˆ¶viewï¼Œæˆ‘çš„å•å‡»äº‹ä»¶æˆ‘è‡ªè¡Œå¤„ç†ï¼Œä¸è¦é˜»ç¢æˆ‘ã€‚
 	//	    return super.dispatchTouchEvent(ev);
 	//	}
 	
 	    
 	
-		private float xDown;// ¼ÇÂ¼ÊÖÖ¸°´ÏÂÊ±µÄºá×ø±ê¡£
-		private float xMove;// ¼ÇÂ¼ÊÖÖ¸ÒÆ¶¯Ê±µÄºá×ø±ê¡£
-		private float yDown;// ¼ÇÂ¼ÊÖÖ¸°´ÏÂÊ±µÄ×İ×ø±ê¡£
-		private float yMove;// ¼ÇÂ¼ÊÖÖ¸ÒÆ¶¯Ê±µÄ×İ×ø±ê¡£
-		private boolean viewpagersroll = false;// µ±Ç°ÊÇ·ñÊÇviewpager»¬¶¯
+		private float xDown;// è®°å½•æ‰‹æŒ‡æŒ‰ä¸‹æ—¶çš„æ¨ªåæ ‡ã€‚
+		private float xMove;// è®°å½•æ‰‹æŒ‡ç§»åŠ¨æ—¶çš„æ¨ªåæ ‡ã€‚
+		private float yDown;// è®°å½•æ‰‹æŒ‡æŒ‰ä¸‹æ—¶çš„çºµåæ ‡ã€‚
+		private float yMove;// è®°å½•æ‰‹æŒ‡ç§»åŠ¨æ—¶çš„çºµåæ ‡ã€‚
+		private boolean viewpagersroll = false;// å½“å‰æ˜¯å¦æ˜¯viewpageræ»‘åŠ¨
 	
 		public MyViewPager(Context context) {
 			super(context);
@@ -49,7 +49,7 @@ description:
 		@Override
 		public boolean dispatchTouchEvent(MotionEvent ev) {
 			if (ev.getAction() == MotionEvent.ACTION_DOWN) {
-				// ¼ÇÂ¼°´ÏÂÊ±µÄÎ»ÖÃ
+				// è®°å½•æŒ‰ä¸‹æ—¶çš„ä½ç½®
 				xDown = ev.getRawX();
 				yDown = ev.getRawY();
 			} else if (ev.getAction() == MotionEvent.ACTION_MOVE) {
@@ -57,16 +57,16 @@ description:
 				yMove = ev.getRawY();
 	
 				if (viewpagersroll) {
-					// viewpager×Ô¼º´¦Àí»¬¶¯Ğ§¹û
+					// viewpagerè‡ªå·±å¤„ç†æ»‘åŠ¨æ•ˆæœ
 					getParent().requestDisallowInterceptTouchEvent(true);
 					return super.dispatchTouchEvent(ev);
 				}
 	
-				// ÕâÀïµÄ¶¯×÷ÅĞ¶ÏÊÇViewpager»¬¶¯,ListView²»»¬¶¯
+				// è¿™é‡Œçš„åŠ¨ä½œåˆ¤æ–­æ˜¯Viewpageræ»‘åŠ¨,ListViewä¸æ»‘åŠ¨
 				if (Math.abs(yMove - yDown) < 10 && Math.abs(xMove - xDown) > 20) {
 					viewpagersroll = true;
 				} else {
-					// ÓÉ¸¸ÈİÆ÷listviewÀ´´¦Àí»¬¶¯Ğ§¹û
+					// ç”±çˆ¶å®¹å™¨listviewæ¥å¤„ç†æ»‘åŠ¨æ•ˆæœ
 					return false;
 				}
 			} else if (ev.getAction() == MotionEvent.ACTION_UP) {
@@ -75,8 +75,6 @@ description:
 			return super.dispatchTouchEvent(ev);
 		}
 	}
-
-
 
 
 
