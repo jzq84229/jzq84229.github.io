@@ -1,6 +1,6 @@
 _site/
 _drafts/
 .DS_Store
-.idea/
-/.project
 /jzq84229.github.io.iml
+.idea/
+/.config_backup
