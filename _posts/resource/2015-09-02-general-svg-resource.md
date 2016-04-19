@@ -460,7 +460,6 @@ style="fill:url(#grey_blue)"/>
 
 
 参考资料：
-
 ---
 
 [SVG教程 http://www.w3school.com.cn/svg/](http://www.w3school.com.cn/svg/)  
@@ -468,9 +467,3 @@ style="fill:url(#grey_blue)"/>
 [XML的基础和DOCTYPE字段的解析](http://lz12366.iteye.com/blog/725383)  
 
 [DTD]: http://www.w3school.com.cn/dtd/dtd_intro.asp "DTD教程"
-
-
-
-
-
-

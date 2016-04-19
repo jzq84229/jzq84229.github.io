@@ -192,10 +192,13 @@ register的下句:
 
 
 
-    
 
 
-分析EventBus源码，重复register而没有报错。  
 
+分析EventBus源码，重复register而没有报错。
 
 此次记录EventBus register后一定要及时unregister，否则就可能会出现重复执行onEvent，甚至应用崩溃。
+
+EventBus源码分析可以参看以下博客：
+[http://blog.csdn.net/lmj623565791/article/details/40920453](http://blog.csdn.net/lmj623565791/article/details/40920453)  
+[http://www.cnblogs.com/punkisnotdead/p/4794151.html](http://www.cnblogs.com/punkisnotdead/p/4794151.html)
