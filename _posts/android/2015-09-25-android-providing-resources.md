@@ -146,7 +146,6 @@ drawable-en-port/
 
 
 参考资料
-
 ---
 [http://developer.android.com/guide/topics/resources/providing-resources.html][1]   
 [http://developer.android.com/guide/practices/screens_support.html](http://developer.android.com/guide/practices/screens_support.html)    

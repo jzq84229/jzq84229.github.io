@@ -50,6 +50,7 @@ description:
   2. 我当前目录下有abc1.zip，abc2.zip和abc3.zip，我想一起解压缩它们：
 
           unzip abc\?.zip
+
     > 注释：?表示一个字符，如果用*表示任意多个字符。
 
   3. 我有一个很大的压缩文件large.zip，我不想解压缩，只想看看它里面有什么：
@@ -64,11 +65,6 @@ description:
 
           unzip -j music.zip
 
-参考资料：
-
----
-[http://www.cnblogs.com/chinareny2k/archive/2010/01/05/1639468.html](http://www.cnblogs.com/chinareny2k/archive/2010/01/05/1639468.html)
-[http://www.jb51.net/LINUXjishu/43356.html](http://www.jb51.net/LINUXjishu/43356.html)
 
 ## 安装软件
 我用的Linux发行版本时Ubuntu，所以我基于这个版本来说。当我们在Ubuntu上安装一个软件时，常用shell来安装：
@@ -107,13 +103,14 @@ rpm类型的是suse和Fedora上可安装的类型。
   `apt-get --purge remove xxx`
 
   2. dpkg方式：
-  移除式卸载：`dpkg -r xxx` 
+  移除式卸载：`dpkg -r xxx`
 
   清除式卸载：`dpkg -P xxx`
 
 
 
 参考资料:
-
 ---
-[http://ibeyond.blog.51cto.com/1988404/400067](http://ibeyond.blog.51cto.com/1988404/400067)
+[http://www.cnblogs.com/chinareny2k/archive/2010/01/05/1639468.html](http://www.cnblogs.com/chinareny2k/archive/2010/01/05/1639468.html)  
+[http://www.jb51.net/LINUXjishu/43356.html](http://www.jb51.net/LINUXjishu/43356.html)  
+[http://ibeyond.blog.51cto.com/1988404/400067](http://ibeyond.blog.51cto.com/1988404/400067)  
