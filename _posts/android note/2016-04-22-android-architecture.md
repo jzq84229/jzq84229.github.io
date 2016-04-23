@@ -10,7 +10,7 @@ description:
 # android系统架构
 原文地址：[https://source.android.com/devices/index.html](https://source.android.com/devices/index.html)
 
-![android-architecture](../../assets/images/ape_fwk_all.png)
+![android-architecture](/assets/images/ape_fwk_all.png)
 
 
 Application Framework
