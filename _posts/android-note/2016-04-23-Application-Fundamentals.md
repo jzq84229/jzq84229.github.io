@@ -13,6 +13,7 @@ description:
 通常android应用使用java语言编写。android SDK会将你的代码和资源文件编译为一个后缀名为.apk的APK压缩文件。
 APK文件包含android应用的所有内容，他是android设备安装应用的文件。  
 一旦app安装到android设备，每一个app都在运行在自己的安全沙盒内：
+
  - android是一个多用户的linux操作系统，每个app就是一个不同的用户。
  - 系统会默认给每一个app一个唯一的linux user ID（这个ID只能有系统使用，app自己并不知道）。系统为app的所有文件设置权限，只有这个特定app可以操作这些文件。
  - 每个进程都有它独立的虚拟机（VM），所以app之间是完全隔离的。
@@ -21,6 +22,7 @@ APK文件包含android应用的所有内容，他是android设备安装应用的
 Android系统可以通过这种方式实现最小权限原则。也就是说，默认情况下，每个应用只能访问执行其工作所需的组件，而不能访问其他组件。
 这样便营造出一个非常安全的环境，在这个环境中，应用无法访问系统中其未获得权限的部分。
 不过，应用仍然可以通过一些途径与其他应用共享数据及访问系统服务：
+
   - 可以安排两个应用共享同一Linux用户ID，在这种情况下，它们能够相互访问彼此的文件。为了节省系统资源，可以安排具有相同用户ID的应用在同一Linux进程中运行，并共享同一VM（应用还必须使用相同的证书签名）；
   - 应用可以请求访问设备数据（如用户的联系人、短信、可装入存储装置[SD卡]、相机、蓝牙等）的权限。所有应用权限都必须由用户在安装时授予。
 
@@ -58,6 +60,7 @@ Intent可以显式声明，也可以隐式声明。隐式Intent的作用无非�
     boolean isIntentSafe = activities.size() > 0;
 
 每种类型的组件有不同的启动方法：
+
   - 启动Activity， 可用通过将Intent传递到startActivity()或startActivityForResult()（当想让activity返回结果时）
   - 启动Service， 可以通过将Intent传递到startService()来启动服务（或对执行中的服务下达新指令）。或者也可以通过将Intent传递到bindService()来绑定到该服务；
   - 发送BroadCast， 可以通过将Intent传递到sendBroadcast()、sendOrderedBroadcast()或sendStickyBroadcast()等方法来发起广播。
@@ -74,6 +77,7 @@ Intent可以显式声明，也可以隐式声明。隐式Intent的作用无非�
 ---
 在android系统启动应用前，系统必须通过读取应用的AndroidManifest.xml文件("清单"文件)确认组件存在。您的应用必须在此文件中声明其所有组件，该文件必须位于应用项目的根目录中。  
 除了声明应用的组件，清单文件还有其他作用：
+
   - 确定应用需要的任何用户权限，如：互联网访问权限或用户联系人读取权限
   - 根据应用使用的API，声明应用所需的最低API级别。
   - 声明应用使用或需要的硬件和软件功能，如相机、蓝牙服务或多点触摸屏幕。
@@ -81,10 +85,10 @@ Intent可以显式声明，也可以隐式声明。隐式Intent的作用无非�
   - 其他功能
   
 您必须通过以下方式声明所有应用组件：
-  - Activity的[<activity>](https://developer.android.com/guide/topics/manifest/activity-element.html)元素
-  - 服务的[<service>](https://developer.android.com/guide/topics/manifest/service-element.html)元素
-  - 广播接收器的[<receiver>](https://developer.android.com/guide/topics/manifest/receiver-element.html)元素
-  - 内容提供程序的[<provider>](https://developer.android.com/guide/topics/manifest/provider-element.html)元素
+  - Activity的[&lt;activity>](https://developer.android.com/guide/topics/manifest/activity-element.html)元素
+  - 服务的[&lt;service>](https://developer.android.com/guide/topics/manifest/service-element.html)元素
+  - 广播接收器的[&lt;receiver>](https://developer.android.com/guide/topics/manifest/receiver-element.html)元素
+  - 内容提供程序的[&lt;provider>](https://developer.android.com/guide/topics/manifest/provider-element.html)元素
   
 您包括在源代码中和高，但未在清单文件中声明的Activity、服务和内容提供程序对系统不可见，因此也永远不会运行。
 不过，广播接收器可以在清单文件中声明或在代码中动态创建（如Broadcast对象）并通过调用registerReceiver()在系统中注册。
