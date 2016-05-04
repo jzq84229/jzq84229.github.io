@@ -62,10 +62,32 @@ description:
 
 查看gradlew可用任务命令
 
+获取任务帮助信息：
 
+	gradlew help --task someTask
+
+可以显示指定任务的详细信息。或者多项目构建中相同任务名称的所有任务的信息。
+
+	gradlew -q help --task libs
+
+获取依赖信息： 执行**gradlew dependencies**会列出项目的依赖列表，所有依赖会根据任务区分，以树形结构展示出来。
+
+	gradlew -q dependencies app:dependencies
+
+过滤依赖信息：  
+可以通过--configuration 参数来查看 指定构建任务的依赖情况。
+
+	gradle -q api:dependencies --configuration testCompile
+
+查看特定依赖：  
+执行 Running gradle dependencyInsight 可以查看指定的依赖情况。
+
+	gradle -q webapp:dependencyInsight --dependency groovy --configuration compile
+	
 参考资料：
 ---
 
 [http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/](http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/)  
 [http://www.flysnow.org/2015/03/30/manage-your-android-project-with-gradle.html](http://www.flysnow.org/2015/03/30/manage-your-android-project-with-gradle.html)  
-[http://blog.csdn.net/qinxiandiqi/article/category/2394347](http://blog.csdn.net/qinxiandiqi/article/category/2394347)
+[http://blog.csdn.net/qinxiandiqi/article/category/2394347](http://blog.csdn.net/qinxiandiqi/article/category/2394347)  
+[http://wiki.jikexueyuan.com/project/gradle/using-the-gradle-command-line.html](http://wiki.jikexueyuan.com/project/gradle/using-the-gradle-command-line.html)
