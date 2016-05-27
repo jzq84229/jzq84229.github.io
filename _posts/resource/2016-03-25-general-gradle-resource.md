@@ -77,13 +77,13 @@ description:
 过滤依赖信息：  
 可以通过--configuration 参数来查看 指定构建任务的依赖情况。
 
-	gradle -q api:dependencies --configuration testCompile
+	gradle -q app:dependencies --configuration testCompile
 
 查看特定依赖：  
 执行 Running gradle dependencyInsight 可以查看指定的依赖情况。
 
 	gradle -q webapp:dependencyInsight --dependency groovy --configuration compile
-	
+
 参考资料：
 ---
 
