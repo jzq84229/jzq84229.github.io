@@ -19,3 +19,8 @@ description:
 []()  
 []()
 []()
+
+### adb命令
+adb shell pm list packages：列出所有的包名。  
+adb shell dumpsys package：列出所有的安装应用的信息  
+dumpsys package com.android.XXX：查看某个包的具体信息  

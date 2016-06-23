@@ -9,6 +9,7 @@ description:
 
 Git简介
 
+- git branch 查看所有分支
 
 参考资源
 ----
