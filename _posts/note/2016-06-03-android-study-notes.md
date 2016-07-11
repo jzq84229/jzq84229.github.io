@@ -27,7 +27,9 @@ description:
 - [ ] zxing
 - [ ] CharSequence和String、SpannableString笔记
 - [ ] ViewDragHelper分析 [参考资料](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/0911/1680.html)
-
+- [ ] Drawable与Bitmap
+- [ ] Character笔记
+- [ ] emoji开源框架[emojicon](https://github.com/rockerhieu/emojicon)
 
 ### adb命令
 adb shell pm list packages：列出所有的包名。  
