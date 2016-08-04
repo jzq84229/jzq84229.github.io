@@ -50,3 +50,11 @@ ViewStub是一个轻量级的View，它一个看不见的，不占布局位置�
 #### 5. Interpolator 动画插值器
 可参考以下文章：
 [http://androidigging.blog.51cto.com/2753843/1427128](http://androidigging.blog.51cto.com/2753843/1427128)
+
+#### 6. 设置ScrollView中ScrollBar的Style
+在xml中配置`android:scrollbarStyle="insideInset"`属性。
+有4个属性可选：
+- outsideInset:
+- outsideOverlay:
+- insideInset:
+- inside
