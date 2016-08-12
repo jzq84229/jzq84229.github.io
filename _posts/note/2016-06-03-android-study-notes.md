@@ -31,14 +31,12 @@ description:
 - [ ] Character笔记
 - [ ] emoji开源框架[emojicon](https://github.com/rockerhieu/emojicon)
 
-### adb命令
-adb shell pm list packages：列出所有的包名。  
-adb shell dumpsys package：列出所有的安装应用的信息  
-dumpsys package com.android.XXX：查看某个包的具体信息  
+
 
 
 ### Android系统服务
 [原文 http://blog.csdn.net/freshui/article/details/5993195](http://blog.csdn.net/freshui/article/details/5993195)
+
 #### System_Server进程
 
 运行在system server进程中的服务比较多，这是整个android框架的基础
