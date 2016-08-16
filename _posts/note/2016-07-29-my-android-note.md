@@ -58,3 +58,17 @@ ViewStub是一个轻量级的View，它一个看不见的，不占布局位置�
 - outsideOverlay:
 - insideInset:
 - inside
+
+#### 7.Android抽象布局——include、merge 、ViewStub
+Android抽象布局——include、merge 、ViewStub: [http://blog.csdn.net/xyz_lmn/article/details/14524567](http://blog.csdn.net/xyz_lmn/article/details/14524567)  
+ Android布局优化之ViewStub、include、merge使用与源码分析: [http://blog.csdn.net/bboyfeiyu/article/details/45869393](http://blog.csdn.net/bboyfeiyu/article/details/45869393)  
+Android布局优化之include、merge、ViewStub的使用
+:[http://www.sunnyang.com/418.html?utm_source=tuicool&utm_medium=referral](http://www.sunnyang.com/418.html?utm_source=tuicool&utm_medium=referral)  
+android中include、merge、ViewStub使用与源码分析: [http://www.jianshu.com/p/5105cc71a3e1](http://www.jianshu.com/p/5105cc71a3e1)
+
+#### 8.ToolBar介绍
+Toolbar: [https://developer.android.com/reference/android/widget/Toolbar.html](https://developer.android.com/reference/android/widget/Toolbar.html)  
+Android开发：最详细的 Toolbar 开发实践总结: [http://www.jianshu.com/p/79604c3ddcae](http://www.jianshu.com/p/79604c3ddcae)  
+Android ToolBar 使用完全解析: [http://www.jianshu.com/p/ae0013a4f71a](http://www.jianshu.com/p/ae0013a4f71a)  
+android：ToolBar详解（手把手教程）: [http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html)  
+Android ToolBar 的简单封装: [http://blog.csdn.net/jxxfzgy/article/details/46476903](http://blog.csdn.net/jxxfzgy/article/details/46476903)  
