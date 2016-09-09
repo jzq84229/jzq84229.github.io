@@ -69,6 +69,11 @@ android中include、merge、ViewStub使用与源码分析: [http://www.jianshu.c
 #### 8.ToolBar介绍
 Toolbar: [https://developer.android.com/reference/android/widget/Toolbar.html](https://developer.android.com/reference/android/widget/Toolbar.html)  
 Android开发：最详细的 Toolbar 开发实践总结: [http://www.jianshu.com/p/79604c3ddcae](http://www.jianshu.com/p/79604c3ddcae)  
+Toolbar的介绍和使用: [http://blog.csdn.net/wangjiang_qianmo/article/details/50673176](http://blog.csdn.net/wangjiang_qianmo/article/details/50673176)  
 Android ToolBar 使用完全解析: [http://www.jianshu.com/p/ae0013a4f71a](http://www.jianshu.com/p/ae0013a4f71a)  
 android：ToolBar详解（手把手教程）: [http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html)  
 Android ToolBar 的简单封装: [http://blog.csdn.net/jxxfzgy/article/details/46476903](http://blog.csdn.net/jxxfzgy/article/details/46476903)  
+
+#### 9.保持屏幕常亮
+[http://kaywu.github.io/2016/04/17/Android-Screen-On/](http://kaywu.github.io/2016/04/17/Android-Screen-On/)  
+[http://blog.csdn.net/panda1234lee/article/details/8731636](http://blog.csdn.net/panda1234lee/article/details/8731636)  
