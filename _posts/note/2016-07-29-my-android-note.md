@@ -77,3 +77,41 @@ Android ToolBar 的简单封装: [http://blog.csdn.net/jxxfzgy/article/details/4
 #### 9.保持屏幕常亮
 [http://kaywu.github.io/2016/04/17/Android-Screen-On/](http://kaywu.github.io/2016/04/17/Android-Screen-On/)  
 [http://blog.csdn.net/panda1234lee/article/details/8731636](http://blog.csdn.net/panda1234lee/article/details/8731636)  
+
+#### 10.surfaceView设置背景透明
+创建时：
+```
+setZOrderOnTop(true);
+getHolder().setFormat(PixelFormat.TRANSLUCENT);
+```
+
+绘制时：
+```
+Canvas.drawColor(Color.TRANSPARENT,Mode.CLEAR);
+```
+
+### 11.平板Pad使用TabLayout时无法全屏显示
+这是由于TabLayout的默认样式Widget.Design.TabLayout在不同设备继承自不同样式。 (normal, landscape and sw600dp)
+我们要看的是平板样式tablets (sw600dp)
+```
+<style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+    <item name="tabGravity">center</item>
+    <item name="tabMode">fixed</item>
+</style>
+```
+这里的属性`tabGravity`我们使用的`fill`  
+我们再看一下这个样式继承的`Base.Widget.Design.TabLayout`
+```
+<style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+    <item name="tabMaxWidth">@dimen/tab_max_width</item>
+    <item name="tabIndicatorColor">?attr/colorAccent</item>
+    <item name="tabIndicatorHeight">2dp</item>
+    <item name="tabPaddingStart">12dp</item>
+    <item name="tabPaddingEnd">12dp</item>
+    <item name="tabBackground">?attr/selectableItemBackground</item>
+    <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+    <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+</style>
+```
+所以从这个样式我们知道应该重写`tabMaxWidth`属性。我这设置为0dp，这样就没有宽度限制了。  
+详细信息可见：[http://stackoverflow.com/questions/30843775/tab-not-taking-full-width-on-tablet-device-using-android-support-design-widget](http://stackoverflow.com/questions/30843775/tab-not-taking-full-width-on-tablet-device-using-android-support-design-widget)

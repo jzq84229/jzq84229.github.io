@@ -29,7 +29,7 @@ cat cpuinfo
 #### adb无线连接调试app
 1. 使用usb连接手机
 2. 输入命令：adb tcpip 5555 系统会返回`restarting in TCP mode port:5555`
-3. 查看手机ip如：192.168.0.120 输入命令：`adb connect 192.168.0.120:5555` 系统返回:`adb connect 192.168.0.142:5555`
+3. 查看手机ip如：192.168.0.120 输入命令：`adb connect 192.168.0.120:5555` 系统返回:`adb connect 192.168.0.120:5555`
 手机已通过wifi连接成功，可以拔掉usb即可使用adb命令
 4. 若要退出无线模式，输入：adb usb
 
