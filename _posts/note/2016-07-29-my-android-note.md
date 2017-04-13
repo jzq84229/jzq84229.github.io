@@ -115,3 +115,21 @@ Canvas.drawColor(Color.TRANSPARENT,Mode.CLEAR);
 ```
 所以从这个样式我们知道应该重写`tabMaxWidth`属性。我这设置为0dp，这样就没有宽度限制了。  
 详细信息可见：[http://stackoverflow.com/questions/30843775/tab-not-taking-full-width-on-tablet-device-using-android-support-design-widget](http://stackoverflow.com/questions/30843775/tab-not-taking-full-width-on-tablet-device-using-android-support-design-widget)
+
+
+### 12.EditText如何不自动获取焦点
+android页面中如有EditText，则进入页面后EditText会自动获取焦点，如何取消这种默认行为呢？
+只需在EditText的父控件上设置
+```
+android:focusable="true"  
+android:focusableInTouchMode="true"
+ ```
+ 这样就拦截了EditText默认获取焦点的行为。
+
+### 13.Sources for 'Android API 25 Platform' not found
+进入Android SDK设置界面  
+Windows: File -> Settings (ctrl+alt+s) -> Appearance & Behavior -> System Settings -> Android SDK.  
+Mac: Android Studio -> Preferences (cmd + ,) -> Appearance & Behavior -> System Settings -> Android SDK.  
+点击Android SDK路径右侧的`Edit`按钮，然后根据设置向导点击`Next`按钮。即可修复这个问题。
+
+[http://stackoverflow.com/questions/36814755/sources-for-android-api-23-platform-not-found-android-studio-2-0](http://stackoverflow.com/questions/36814755/sources-for-android-api-23-platform-not-found-android-studio-2-0)

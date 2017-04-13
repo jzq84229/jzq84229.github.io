@@ -14,9 +14,23 @@ dumpsys package com.android.XXX：查看某个包的具体信息
 
 #### 查看logcat
 查看和跟踪系统日志缓冲区的命令logcat的一般用法是：
-
 ```
 [adb] logcat [<option>] ... [<filter-spec>] ...
+```
+
+将日志保存到文件
+```
+logcat -v time > d:\log\log1.txt
+```
+
+log过滤
+```
+logcat | grep MyAppName
+```
+
+清除log
+```
+logcat -c
 ```
 
 #### adb查看cpu信息

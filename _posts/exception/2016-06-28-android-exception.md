@@ -64,3 +64,62 @@ This happens when a Module has a dependency on both another module and that same
 ```
 删除相同的jar包
 ```
+
+6. `java.lang.IndexOutOfBoundsException: Invalid item position 0(0). Item count:0`
+RecyclerView自定义LayoutManage时，在onmeasure()中调用
+`View view = recycler.getViewForPosition(position);`报以下错误。  
+```
+03-24 09:40:20.887 25006-25006/com.acmed.multiparams.monitor E/AndroidRuntime: FATAL EXCEPTION: main
+ Process: com.acmed.multiparams.monitor, PID: 25006
+ java.lang.IndexOutOfBoundsException: Invalid item position 0(0). Item count:0
+     at android.support.v7.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:5466)
+     at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:5440)
+     at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:5436)
+     at com.acmed.multiparams.monitor.common.widget.AutoGridLayoutManager.onMeasure(AutoGridLayoutManager.java:39)
+     at android.support.v7.widget.RecyclerView.onMeasure(RecyclerView.java:3014)
+     at com.acmed.multiparams.monitor.common.widget.PageRecyclerView.onMeasure(PageRecyclerView.java:99)
+     at android.view.View.measure(View.java:17682)
+     at android.widget.LinearLayout.measureVertical(LinearLayout.java:875)
+     at android.widget.LinearLayout.onMeasure(LinearLayout.java:613)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5535)
+     at android.widget.FrameLayout.onMeasure(FrameLayout.java:438)
+     at android.support.v7.widget.ContentFrameLayout.onMeasure(ContentFrameLayout.java:139)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5535)
+     at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1436)
+     at android.widget.LinearLayout.measureVertical(LinearLayout.java:722)
+     at android.widget.LinearLayout.onMeasure(LinearLayout.java:613)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5535)
+     at android.widget.FrameLayout.onMeasure(FrameLayout.java:438)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5535)
+     at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1436)
+     at android.widget.LinearLayout.measureVertical(LinearLayout.java:722)
+     at android.widget.LinearLayout.onMeasure(LinearLayout.java:613)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5535)
+     at android.widget.FrameLayout.onMeasure(FrameLayout.java:438)
+     at com.android.internal.policy.impl.PhoneWindow$DecorView.onMeasure(PhoneWindow.java:2789)
+     at android.view.View.measure(View.java:17682)
+     at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2131)
+     at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1273)
+     at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1491)
+     at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1161)
+     at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6198)
+     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:767)
+     at android.view.Choreographer.doCallbacks(Choreographer.java:580)
+     at android.view.Choreographer.doFrame(Choreographer.java:550)
+     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:753)
+     at android.os.Handler.handleCallback(Handler.java:739)
+     at android.os.Handler.dispatchMessage(Handler.java:95)
+     at android.os.Looper.loop(Looper.java:135)
+     at android.app.ActivityThread.main(ActivityThread.java:5280)
+     at java.lang.reflect.Method.invoke(Native Method)
+     at java.lang.reflect.Method.invoke(Method.java:372)
+     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:963)
+     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:758)
+```
+解决方法：  
+在LayoutManager构造函数中调用`setAutoMeasureEnabled(false);`
