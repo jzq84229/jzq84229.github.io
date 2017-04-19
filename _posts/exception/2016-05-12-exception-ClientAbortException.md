@@ -7,7 +7,7 @@ keywords:
 description:
 ---
 
-项目中遇到一个问题，前台想后台发送请求时，没有数据返回，后台报错：
+项目中遇到一个问题，前台向后台发送请求时，没有数据返回，后台报错：
 
     org.apache.catalina.connector.ClientAbortException: null
             at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388) ~[catalina.jar:7.0.26]

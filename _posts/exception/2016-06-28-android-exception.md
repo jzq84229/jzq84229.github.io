@@ -7,12 +7,12 @@ keywords:
 description:
 ---
 
-1. `build-tools/22.0.1/aapt finished with non-zero exit value 127`  
+#### 1. `build-tools/22.0.1/aapt finished with non-zero exit value 127`  
 使用 `./gradlew assembleDebug --info` 命令找到具体出错原因  
 `/opt/local/android-sdk/android-sdk-linux/build-tools/22.0.1/aapt: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory`  
 原因是: 64位的Ubuntu系统, 应该是缺少 lib32stdc++6这个包，用 `apt-get install lib32stdc++6`安装一下就可以
 
-2. `chromium: [INFO:CONSOLE(107)] "TypeError: Cannot read property 'getItem' of null`  
+#### 2. `chromium: [INFO:CONSOLE(107)] "TypeError: Cannot read property 'getItem' of null`  
 This seems to allow the browser to store a DOM model of the page elements, so that Javascript can perform operations on it.  
 解决方法：
 ```
@@ -20,14 +20,14 @@ WebSettings settings = webView.getSettings();
 settings.setDomStorageEnabled(true);
 ```
 
-3. `Installation failed with message INSTALL_FAILED_CONFLICTING_PROVIDER`
+#### 3. `Installation failed with message INSTALL_FAILED_CONFLICTING_PROVIDER`
 The authority, as listed in android:authorities must be unique. Quoting the documentation for this attribute.  
 解决方法：
 ```
 To avoid conflicts, authority names should use a Java-style naming convention (such as com.example.provider.cartoonprovider). Typically, it's the name of the ContentProvider subclass that implements the provider
 ```
 
-4. `java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "tcgetattr" referenced by "libecgJni.so"...`  
+#### 4. `java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "tcgetattr" referenced by "libecgJni.so"...`  
 NDK开发时，app运行崩溃。
 ```
 E/AndroidRuntime(15368): FATAL EXCEPTION: main
@@ -57,7 +57,7 @@ You can see the diff of termios.h file between API 19 and 21+.
 so, I copy the termios.h from D:\Android\Sdk\ndk-bundle\platforms\android-19\arch-arm\usr\include to jni folder, and then it works.
 ```
 
-5.  `com.android.dex.DexException: Multiple dex files define Lcom/XunLiu/jni/NativeInitializer`  
+#### 5.  `com.android.dex.DexException: Multiple dex files define Lcom/XunLiu/jni/NativeInitializer`  
 这个问题出现在一个模块与依赖的模块都导入了同一个jar包。  
 This happens when a Module has a dependency on both another module and that same module's jar.  
 解决方法：
@@ -65,7 +65,7 @@ This happens when a Module has a dependency on both another module and that same
 删除相同的jar包
 ```
 
-6. `java.lang.IndexOutOfBoundsException: Invalid item position 0(0). Item count:0`
+#### 6. `java.lang.IndexOutOfBoundsException: Invalid item position 0(0). Item count:0`
 RecyclerView自定义LayoutManage时，在onmeasure()中调用
 `View view = recycler.getViewForPosition(position);`报以下错误。  
 ```
@@ -123,3 +123,21 @@ RecyclerView自定义LayoutManage时，在onmeasure()中调用
 ```
 解决方法：  
 在LayoutManager构造函数中调用`setAutoMeasureEnabled(false);`
+
+#### 7. `ECSDK couldn't start: dlopen failed: /data/app/com.acmedcare.im.imapp-1/lib/arm/libserphone.so: has text relocations`  
+手机：小米4   
+系统：MIUI8.2稳定版 Android 6.0.1 MMB29M  
+应用使用容联云SDK的so文件。  
+gradle targetSdkVersion大于22，运行时报错。  
+
+解决方案：  
+gradle targetSdkVersion 改为22。打包后正常运行。
+原因待查。
+
+#### 8. `Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]`
+adb安装APK时报错：`Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]`  
+在已安装Release版APK后，覆盖安装Debug版APK时，在未完全卸载的一个无效状态被卡住le。  
+解决方法：  
+打开命令行界面，运行：`adb uninstall my.package.id`
+这样便可以完全卸载应用。  
+[http://stackoverflow.com/questions/26794862/failure-install-failed-update-incompatible-even-if-app-appears-to-not-be-insta](http://stackoverflow.com/questions/26794862/failure-install-failed-update-incompatible-even-if-app-appears-to-not-be-insta)
