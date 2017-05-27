@@ -141,3 +141,24 @@ adb安装APK时报错：`Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]`
 打开命令行界面，运行：`adb uninstall my.package.id`
 这样便可以完全卸载应用。  
 [http://stackoverflow.com/questions/26794862/failure-install-failed-update-incompatible-even-if-app-appears-to-not-be-insta](http://stackoverflow.com/questions/26794862/failure-install-failed-update-incompatible-even-if-app-appears-to-not-be-insta)
+
+#### 9. `Error:(95) undefined reference to '__android_log_print'`
+NDK运行时报错：
+
+解决方法，用eclispe编译：
+```
+在Android.mk中添加
+LOCAL_LDLIBS := -llog
+```
+如果使用Android Studio和gradle，会忽略Android.md文件，则需要在build.gradle文件中添加:
+```
+android {
+    defaultConfig {
+        ndk {
+            moduleName "your_module_name"
+            ldLibs "log"
+        }
+    }
+}
+```
+[http://stackoverflow.com/questions/4455941/undefined-reference-to-android-log-print](http://stackoverflow.com/questions/4455941/undefined-reference-to-android-log-print)
