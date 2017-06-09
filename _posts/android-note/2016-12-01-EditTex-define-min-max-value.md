@@ -1,3 +1,4 @@
+---
 layout: post
 title: Android EditText设置最大最小值
 category: Android

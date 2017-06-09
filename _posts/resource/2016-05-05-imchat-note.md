@@ -21,7 +21,7 @@ description:
 - [产品概述](https://www.qcloud.com/doc/product/269/%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0)
 - [功能介绍](https://www.qcloud.com/doc/product/269/%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
 - [接入服务系统](https://www.qcloud.com/doc/product/269/%E6%8E%A5%E5%85%A5%E6%9C%8D%E5%8A%A1%E7%B3%BB%E7%BB%9F)
-![](../../assets/img/teng-sdk-image.png)  
+![](http://7xn4nm.com1.z0.glb.clouddn.com/teng-sdk-image.png)  
 仅有demo界面需开发人员自己设计开发。
 
 ## 阿里[云旺OpenIm](http://baichuan.taobao.com/doc2/detail?spm=a3c0d.7662649.4.15.tGeP6f&treeId=41&articleId=102626&docType=1)

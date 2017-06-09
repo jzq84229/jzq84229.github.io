@@ -1,7 +1,7 @@
 ---
 layout: post
 title: android问题
-category: 笔记
+category: Android
 tags: note
 keywords:
 description:

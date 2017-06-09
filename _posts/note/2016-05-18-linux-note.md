@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Linux问题
-category: Linux
+category: 笔记
 tags: Linux
-keywords: 
+keywords:
 description:
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android个人笔记
-category: 笔记
+category: Android
 tags:
 keywords:
 description:

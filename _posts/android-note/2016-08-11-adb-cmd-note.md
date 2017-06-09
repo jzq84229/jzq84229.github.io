@@ -1,7 +1,7 @@
 ---
 layout: post
 title: adb命令
-category: 笔记
+category: Android
 tags:
 keywords:
 description:

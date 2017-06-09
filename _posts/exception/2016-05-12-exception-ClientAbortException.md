@@ -1,7 +1,7 @@
 ---
 layout: post
 title: org.apache.catalina.connector.ClientAbortException null
-category: exception
+category: Exception
 tags:
 keywords:
 description:

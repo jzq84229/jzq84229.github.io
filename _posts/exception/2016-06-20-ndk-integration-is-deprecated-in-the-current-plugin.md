@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android NDK集成错误
-category: exception
+category: Exception
 tags: Android
 keywords: ndk
 description:

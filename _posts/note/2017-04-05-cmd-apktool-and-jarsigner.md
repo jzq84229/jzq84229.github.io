@@ -2,7 +2,7 @@
 layout: post
 title: APK签名apktool及jarsigner命令
 category: 笔记
-tags:
+tags: apktool, jarsigner
 keywords:
 description:
 ---

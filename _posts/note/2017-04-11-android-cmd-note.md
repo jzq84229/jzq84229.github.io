@@ -1,7 +1,7 @@
 ---
 layout: post
 title: android开发错误笔记
-category: Android
+category: 笔记
 tags: android
 keywords:
 description:

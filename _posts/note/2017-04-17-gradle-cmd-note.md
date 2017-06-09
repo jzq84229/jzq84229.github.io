@@ -1,9 +1,9 @@
 ---
 layout: post
 title: gradlew命令笔记
-category: Gradle
+category: 笔记
 tags: gradle
-keywords:
+keywords: gradle
 description:
 ---
 
