@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android 个人笔记
+title: logcat日志
 category: 笔记
 tags:
 keywords:
