@@ -46,7 +46,7 @@ description:
 
 
 参考资料
-———————————
+---
 [https://docs.oracle.com/javase/tutorial/java/annotations/index.html](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)  
 [http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html](http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html)  
 [http://www.cnblogs.com/mandroid/archive/2011/07/18/2109829.html](http://www.cnblogs.com/mandroid/archive/2011/07/18/2109829.html)

@@ -1,6 +1,10 @@
 _site/
 _drafts/
 .DS_Store
-/jzq84229.github.io.iml
 .idea/
-/.config_backup
+.sass-cache
+Gemfile
+Gemfile.lock
+_posts/.MWebMetaData/
+.jekyll-metadata
+start

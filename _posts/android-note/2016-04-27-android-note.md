@@ -3,7 +3,7 @@ layout: post
 title: android笔记
 category: Android
 tags: Android
-keywords: 
+keywords:
 description:
 ---
 
@@ -27,7 +27,7 @@ Intent 分为两种类型：
     if (sendIntent.resolveActivity(getPackageManager()) != null) {
         startActivity(sendIntent);
     }
-    
+
 ### 强制使用应用选择器
 如果多个应用可以响应 Intent，且用户可能希望每次使用不同的应用，则应采用显式方式显示选择器对话框。选择器对话框要求用户选择每次操作要使用的应用（用户无法为该操作选择默认应用）。 例如，当应用使用 ACTION_SEND 操作执行“共享”时，用户根据目前的状况可能需要使用另一不同的应用，因此应当始终使用选择器对话框。  
 要显示选择器，请使用 createChooser() 创建 Intent，并将其传递给 startActivity()。例如：
@@ -58,12 +58,12 @@ Intent 分为两种类型：
 
 ### 实现生命周期回调
  Activity 生命周期。
- ![Activity 生命周期](../../assets/images/activity_lifecycle.png)
- 
+ ![Activity 生命周期](http://7xn4nm.com1.z0.glb.clouddn.com/activity_lifecycle.png)
+
 表 1. Activity 生命周期回调方法汇总表。
 
 |方法	|描述	|是否能事后终止？	|后接|
-|:---|:---|:---|:---| 
+|:---|:---|:---|:---|
 |**onCreate()**|首次创建 Activity 时调用。 您应该在此方法中执行所有正常的静态设置— 创建视图、将数据绑定到列表等等。系统向此方法传递一个 Bundle 对象，其中包含 Activity 的上一状态，不过前提是捕获了该状态（请参阅后文的保存 Activity 状态）。始终后接 onStart()。|否	|onStart()|
 |**onRestart()**|在 Activity 已停止并即将再次启动前调用。始终后接 onStart()|否	|onStart()|
 |**onStart()**|在 Activity 即将对用户可见之前调用。如果 Activity 转入前台，则后接 onResume()，如果 Activity 转入隐藏状态，则后接 onStop()。|否|onResume()或onStop()|
@@ -76,7 +76,7 @@ Intent 分为两种类型：
 
 ## Fragment
 
-![fragment 生命周期](../../assets/images/fragment_lifecycle.png)
+![fragment 生命周期](http://7xn4nm.com1.z0.glb.clouddn.com/fragment_lifecycle.png)
 
 
 ## Loader加载器

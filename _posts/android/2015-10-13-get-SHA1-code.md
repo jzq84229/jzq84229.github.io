@@ -18,6 +18,6 @@ keystore的SHA1，格式如：
 3. 输入命令
 
         keytool -list -v -keystore debug.keystore
-    
+
     根据提示输入秘钥口令(默认没有)，按回车，得到debug.keystore的签名详情。  
-    ![keystore info](/assets/images/keystore-info.jpg)
+    ![keystore info](http://7xn4nm.com1.z0.glb.clouddn.com/keystore-info.jpg)

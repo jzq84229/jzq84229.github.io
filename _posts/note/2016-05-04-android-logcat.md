@@ -33,7 +33,7 @@ description:
 |ERROR	|F44336|
 |ASSERT	|FF6B68|
 
-![](../../assets/images/logcat.png)
+![](http://7xn4nm.com1.z0.glb.clouddn.com/logcat.png)
 
 
 参考资料：
