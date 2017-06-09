@@ -317,7 +317,7 @@ android:cursorVisible
 
 android:digits
 关联方法: setKeyListener(KeyListener)
-属性说明: 设置允许输入哪些字符。如“1234567890.+-*/%\n()”
+属性说明: 设置允许输入哪些字符。如`1234567890.+-*/%\n()`
 
 android:drawableBottom
 关联方法: setCompoundDrawablesWithIntrinsicBounds(int,int,int,int)
@@ -325,7 +325,7 @@ android:drawableBottom
 
 android:drawableEnd
 关联方法: setCompoundDrawablesRelativeWithIntrinsicBounds(int,int,int,int)
-属性说明: 在文本结尾处显示drawable对象。它的值可以是其它资源的引用，比如，"@[+][package:]type:name"或者"?[package:][type:]name"；也可以是颜色值，如"#rgb", "#argb", "#rrggbb", or "#aarrggbb"。
+属性说明: 在文本结尾处显示drawable对象。它的值可以是其它资源的引用，比如，`@[+][package:]type:name"或者"?[package:][type:]name`；也可以是颜色值，如"#rgb", "#argb", "#rrggbb", or "#aarrggbb"。
 
 android:drawableLeft
 关联方法: setCompoundDrawablesWithIntrinsicBounds(int,int,int,int)
@@ -341,7 +341,7 @@ android:drawableRight
 
 android:drawableStart
 关联方法: setCompoundDrawablesRelativeWithIntrinsicBounds(int,int,int,int)
-属性说明: 在文本开始处显示drawable对象。它的值可以是其它资源的引用，比如，"@[+][package:]type:name"或者"?[package:][type:]name"；也可以是颜色值，如"#rgb", "#argb", "#rrggbb", or "#aarrggbb"。
+属性说明: 在文本开始处显示drawable对象。它的值可以是其它资源的引用，比如，`@[+][package:]type:name"或者"?[package:][type:]name`；也可以是颜色值，如"#rgb", "#argb", "#rrggbb", or "#aarrggbb"。
 
 android:drawableTop
 关联方法: setCompoundDrawablesWithIntrinsicBounds(int,int,int,int)
@@ -564,17 +564,11 @@ android:width
 
 
 参考文档
-
-1, (View)Android 官方文档 —— View
-
-2, (TextView)Android 官方文档 —— TextView
-
-3, (View)Android2.2 API 中文文档系列（5） —— View
-
-4, (View)view使用
-
-5, (View)android ListView几个比较特别的属性
-
-6, (View)第三讲 Layout文件属性讲解
-
-7, (TextView)Android2.2 API 中文文档系列（1） —— TextView
+---
+1, (View)Android 官方文档 —— View  
+2, (TextView)Android 官方文档 —— TextView  
+3, (View)Android2.2 API 中文文档系列（5） —— View  
+4, (View)view使用  
+5, (View)android ListView几个比较特别的属性  
+6, (View)第三讲 Layout文件属性讲解  
+7, (TextView)Android2.2 API 中文文档系列（1） —— TextView  
