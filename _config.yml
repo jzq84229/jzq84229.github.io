@@ -4,29 +4,31 @@ email: zhjmouse@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Jun
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://jzq84229.github.io" # the base hostname & protocol for your site
+url: http://jzq84229.github.io # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
+author: Jun
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
 filter: 'category'
+recent_num: 20
 
 # Social account
 twitter: zhj_mouse
-# weibo:    ID
+weibo: suyan0830
 github: jzq84229
-# codepen:  username
-# dribbble: username
+instagram: suyan0830
+linkedin: suyan0830
 
-# avatar头像及Favicon
+# avatar and Favicon
 avatar: http://7xn4nm.com1.z0.glb.clouddn.com/site-avatar.jpg
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+favicon: http://7xn4nm.com1.z0.glb.clouddn.com/site-favicon.ico
 
-# disqus 设置
+# disqus config
 disqus:
   shortname: jzh
 
-# google analytics 设置
+# google analytics config
 ga:
   id: UA-66208420-1
   url: jzq84229.github.io
@@ -35,5 +37,14 @@ ga:
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: rouge
+mathjax: disabled
 sass:
   style: compressed
+
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+

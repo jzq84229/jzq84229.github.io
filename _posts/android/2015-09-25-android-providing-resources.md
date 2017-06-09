@@ -34,7 +34,7 @@ Table2. 限定条件名称(详见[Providing Resources][1]的table2)
 |smallestWidth| sw\<N\>dp<br>Examples:<br>sw320dp<br>sw600dp<br>sw720dp<br>etc.|屏幕最小宽度|
 |Available width|w\<N\>dp<br>Examples:<br>w720dp<br>w1024dp<br>etc.|屏幕最佳宽度|
 |Available height|h\<N\>dp<br>Examples:<br>h720dp<br>h1024dp<br>etc.|屏幕最佳高度|
-|Screen size|small<br>normal<br>large<br>xlarge|屏幕尺寸。<br>实际物理尺寸。就是我们常说的3.5英寸屏幕，4.7英寸屏幕等等，这个长度说的是对角线的长度。<br>在android中屏幕物理尺寸划分为这么几类：small，normal，large，extra large。<br>xlarge screens are at least 960dp x 720dp<br>large screen are at least 640dp x 480dp<br>normal screens are at least 470dp x 320dp<br>small screens are at least 426dp x 320dp<br>下图是对尺寸以及密度的一个粗略分类。<br>![Alt text](/assets/images/screens-ranges.png)|
+|Screen size|small<br>normal<br>large<br>xlarge|屏幕尺寸。<br>实际物理尺寸。就是我们常说的3.5英寸屏幕，4.7英寸屏幕等等，这个长度说的是对角线的长度。<br>在android中屏幕物理尺寸划分为这么几类：small，normal，large，extra large。<br>xlarge screens are at least 960dp x 720dp<br>large screen are at least 640dp x 480dp<br>normal screens are at least 470dp x 320dp<br>small screens are at least 426dp x 320dp<br>下图是对尺寸以及密度的一个粗略分类。<br>![Alt text](http://7xn4nm.com1.z0.glb.clouddn.com/screens-ranges.png)|
 |Screen aspect|long<br>notlong|屏幕长短边模式。<br>长宽比是屏幕的物理宽度与物理高度的比例关系。<br>long: Long screens, such as WQVGA, WVGA, FWVGA <br> notlong: Not long screens, such as QVGA, HVGA, and VGA|
 |Round screen|round<br>notround|是否圆形屏幕<br>round: 圆形屏幕，如一些圆形穿戴设备<br>notround: 矩形屏幕，如手机、平板等|
 |Screen orientation|port<br>land|当前屏幕横屏竖屏显示模式<br>port: 设备在纵向(vertical)<br>land: 设备在横向(horizontal)|
@@ -84,7 +84,7 @@ values-mcc310(sim卡运营商)-en(语言)-sw320dp(屏幕最小宽度)-w720dp(屏
 
 算法如下图:
 
-![Alt text](/assets/images/res-selection-flowchart.png) ![Alt text](/assets/images/8e7d5a20-9315-377c-a9d4-3553485a0b6b.jpg)
+![Alt text](http://7xn4nm.com1.z0.glb.clouddn.com/res-selection-flowchart.png) ![Alt text](http://7xn4nm.com1.z0.glb.clouddn.com/res-selection-flowchart_cn.jpg)
 
 ### 实例
 如：在一下资源目录中含有同一个文件名的图片资源。
