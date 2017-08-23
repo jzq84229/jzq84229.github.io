@@ -7,13 +7,36 @@ keywords:
 description:
 ---
 
-### keytool用法
+## keytool用法
+查看keystore秘钥信息
+`keytool -list -v -keystore debug.keystore`
 
+```
+密钥和证书管理工具
+
+命令:
+
+ -certreq            生成证书请求
+ -changealias        更改条目的别名
+ -delete             删除条目
+ -exportcert         导出证书
+ -genkeypair         生成密钥对
+ -genseckey          生成密钥
+ -gencert            根据证书请求生成证书
+ -importcert         导入证书或证书链
+ -importpass         导入口令
+ -importkeystore     从其他密钥库导入一个或所有条目
+ -keypasswd          更改条目的密钥口令
+ -list               列出密钥库中的条目
+ -printcert          打印证书内容
+ -printcertreq       打印证书请求的内容
+ -printcrl           打印 CRL 文件的内容
+ -storepasswd        更改密钥库的存储口令
+```
 
 - -certreq            生成证书请求  
 用法：keytool -certreq [OPTION]...
 ```
-
   -alias <alias>                  要处理的条目的别名
   -sigalg <sigalg>                签名算法名称
   -file <filename>                输出文件名
@@ -79,7 +102,7 @@ description:
 - -storepasswd        更改密钥库的存储口令
 
 
-### jarsigner用法
+## jarsigner用法
 用法: jarsigner [选项] jar-file 别名  
        jarsigner -verify [选项] jar-file [别名...]
 

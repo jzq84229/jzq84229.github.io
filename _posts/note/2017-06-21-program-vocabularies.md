@@ -17,3 +17,5 @@ description:
 - embedded 嵌入、嵌入式
 - compiler 编译器
 - VM（Virtual Machine）虚拟机
+- symbol 象征、符号、标志
+- AP(Access Point) 接入点
