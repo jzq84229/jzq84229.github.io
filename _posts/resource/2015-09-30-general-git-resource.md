@@ -28,7 +28,7 @@ Git 将不再跟踪此文件，尽管它仍然是在您的硬盘上.
     ```
     2.修改命令  
     ```
-    git remote origin set-url [url]
+    git remote set-url origin [url]
     ```
 
 - http 访问git 记住密码输入  
