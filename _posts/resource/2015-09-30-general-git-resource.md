@@ -10,6 +10,7 @@ description:
 Git简介
 
 - git branch 查看所有分支
+- git branch -a 查看远程分支
 
 - Git rm – 如何使文件脱离git的版本管理，但不是会删除它.  
 >Git rm命令将允许你取消git对文件的版本控制. 这个 –cached选项允许你把文件保留在你的硬盘上.  
@@ -18,6 +19,30 @@ Git简介
 `git rm --cached file`  
 Git 将不再跟踪此文件，尽管它仍然是在您的硬盘上.  
 运行上述命令后, 一定要添加一个条目到您 .gitignore 文件以便 ' 文件’ 没有显示在 ' git 状态’ 和，它不小心以后将无法重新添加.
+
+- 远程仓库地址变更  
+    1.删除后添加
+    ```
+    git remote rm origin
+    git remote add origin [url]
+    ```
+    2.修改命令  
+    ```
+    git remote origin set-url [url]
+    ```
+
+- http 访问git 记住密码输入  
+```
+git config --global credential.helper store
+```
+
+- 拉取远程分支并创建本地分支
+```
+git checkout -b 本地分支名 origin/远程分支名
+```
+
+
+
 
 
 
