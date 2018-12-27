@@ -13,10 +13,10 @@ description:
 - 免费
 - 架构介绍
 云通信提供单聊、群聊、资料托管、关系链托管、帐号托管全方位解决方案，并提供完善的APP接入、后台管理接口。  
-![](http://7xn4nm.com1.z0.glb.clouddn.com/teng-image.png)
+![](http://winy.eicp.net/teng-image.png)
 - 账户体系
   1. 独立模式：用户帐号信息由开发者保存，用户身份验证（比如注册与验密）也由开发者负责；
-  ![](http://7xn4nm.com1.z0.glb.clouddn.com/20151116095011_75847.png)
+  ![](http://winy.eicp.net/20151116095011_75847.png)
   2. 托管模式：由腾讯为开发者提供帐号的密码注册、存储和密码验证，以及第三方openid和token的托管验证服务
 - [产品概述](https://www.qcloud.com/doc/product/269/%E4%BA%A7%E5%93%81%E6%A6%82%E8%BF%B0)
 - [功能介绍](https://www.qcloud.com/doc/product/269/%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
@@ -29,7 +29,7 @@ description:
 - 免费
 - [产品概述](http://baichuan.taobao.com/doc2/detail?spm=a3c0d.7662649.4.16.tGeP6f&treeId=41&articleId=102626&docType=1)
 - 云旺（OpenIM）服务端客户端交互图
-![](http://7xn4nm.com1.z0.glb.clouddn.com/TB1DpQMHpXXXXbvXFXXwu0bFXXX.png)
+![](http://winy.eicp.net/TB1DpQMHpXXXXbvXFXXwu0bFXXX.png)
 - [常见问题](http://baichuan.taobao.com/doc2/detail.htm?spm=a3c0d.7629140.0.0.QQF158&treeId=41&articleId=103786&docType=1)
 完全免费。
 具有集成UI，可快速开发。  
@@ -52,14 +52,14 @@ description:
     - 开发者服务器生成针对用户的签名signature（signature 的生成算法可以参考悟空Demo服务端部署指南 中的源代码示例）
     - 开发者服务器返回 signature、domain、appkey、timestamp 等数据给客户端
     - 开发者客户端调用阿里悟空的 SDK 接口完成登录鉴权
-![](http://7xn4nm.com1.z0.glb.clouddn.com/TB1HzzdJpXXXXaRXpXXXXXXXXXX-724-363.png)
+![](http://winy.eicp.net/TB1HzzdJpXXXXaRXpXXXXXXXXXX-724-363.png)
 
 - 整体架构:  
 悟空Demo包含客户端和服务端两部分：其中服务端提供了用户鉴权的基本方法；    
 客户端调用服务端的用户鉴权，再将结果发送到阿里悟空平台完成App鉴权和用户登录，登录后就可以通过阿里悟空平台跟其他用户之间收发即时消息。   
 悟空Demo的主要目的是向您展示阿里悟空平台联合鉴权模式的使用，供您在开发即时通讯功能时作参考。   
 悟空Demo的流程图：  
-![](http://7xn4nm.com1.z0.glb.clouddn.com/TB1LWZsIpXXXXatXpXXwu0bFXXX.png)  
+![](http://winy.eicp.net/TB1LWZsIpXXXXatXpXXwu0bFXXX.png)  
 - [常见问题](https://imwukong.com/#faq)  
 当前阿里悟空的聊天消息是永久存储的。  
 阿里悟空当前还没有提供 UI 组件，但是开发者可以参考我们的 Demo  
@@ -95,7 +95,7 @@ description:
   - 无需改变现有 App Server 的架构，独立部署一份用于用户授权的 Service 即可；
   - 专注于提供通讯能力，使用私有的二进制通信协议，消息轻量、有序、不丢消息；
   - 安全的身份认证和授权方式，无需担心 SDK 能力滥用（盗用身份的垃圾消息、垃圾群发）问题。
-  ![](http://7xn4nm.com1.z0.glb.clouddn.com/rongcloud-archietecture.png)  
+  ![](http://winy.eicp.net/rongcloud-archietecture.png)  
   蓝色为您的应用（App）和应用服务器（App Server），用户数据（User Data）和用户好友消息（Friend Relationship Data）保存在您的应用服务器上，融云不需要同步 App 的用户系统和好友关系；绿色为融云服务器（RongCloud Server）和融云 SDK，支持快速集成和平滑迁移。  
   蓝色箭头表示您自己的业务数据经由您自己的应用服务器；绿色箭头表示消息需要经过融云服务器转发（IM 的离线、通知等逻辑决定了消息必须经由服务器进行一次转发）；橙色箭头表示您的应用服务器只需要和融云服务器进行身份授权，不需要您提交详细用户资料。
 
@@ -104,16 +104,16 @@ description:
   1. App 服务端换取 Token 流程，可以参考 Server 开发文档 - 获取 Token 方法
   2. 客户端集成流程，可以参考 Android 开发指南 或者 iOS 开发指南
   3. UI 界面自定义，可以参考 Android 开发指南 - UI 自定义 或者 iOS 开发指南 - UI 自定义  
-  ![](http://7xn4nm.com1.z0.glb.clouddn.com/rongcloud-integration_process.png)
+  ![](http://winy.eicp.net/rongcloud-integration_process.png)
 
 - SDK体系架构介绍：  
-![](http://7xn4nm.com1.z0.glb.clouddn.com/rongcloud-archietecture_sdk.png)
+![](http://winy.eicp.net/rongcloud-archietecture_sdk.png)
   - IMKit 的功能主要是封装各种界面对象，服务于开发者快速实现自己的产品，主要特点是是支持快速集成，支持丰富的界面定制功能。
   - IMLib 的功能是提供基本通信能力库，封装了通信能力和 Conversation，Message 等各种对象，服务于需要根据自己的产品去自己实现界面的开发者。主要特点是封装清晰，轻量，便于使用。
   - Protocol 是融云的核心协议栈，使用融云自定义的私有二进制协议。主要特点是是轻量化，有序可靠，不丢消息。Protocol 部分使用 Native 语言开发，在 Android 和 iOS 平台上保证业务一致性，便于开发者商用化自己的产品。
 - [产品概述](http://www.rongcloud.cn/docs/)
 - [常见问题]()  
-![](http://7xn4nm.com1.z0.glb.clouddn.com/rongcloud.png)
+![](http://winy.eicp.net/rongcloud.png)
 
 
 
@@ -127,7 +127,7 @@ description:
 
 - [产品概述](http://docs.easemob.com/im/start)
 - 集成概述
-![](http://7xn4nm.com1.z0.glb.clouddn.com/hxintegration.png)
+![](http://winy.eicp.net/hxintegration.png)
 - 用户体系：
 > 用户管理REST API提供了一个创建环信账号的REST方法。这个方法很简单，只需要提供账号ID和密码2个参数，就可以创建一个环信账号。对一个已经上线，已经有很多现有用户的APP来说，要集成环信，只需要写一个脚本，循环调用创建环信用户的REST方法即可。
 
@@ -140,14 +140,14 @@ description:
 
 - SDK介绍
 环信SDK为用户开发IM相关的应用提供的一套完善的开发框架。 包括以下几个部分：
-![](http://7xn4nm.com1.z0.glb.clouddn.com/easesdkdemo.png)
+![](http://winy.eicp.net/easesdkdemo.png)
     - SDK_Core为核心的消息同步协议实现，完成与服务器之间的信息交换。
     - SDK是基于核心协议实现的完整的IM功能，实现了不同类型消息的收发，会话管理，群组，好友，聊天室等功能。
     - EaseUI是一组IM相关的UI控件，旨在帮助开发者快速集成环信sdk。
-    开发者可以基于EaseUI或者环信SDK开发自己的应用，前者因为把消息的发送接送等功能封装到了内部，集成时开发者不需要太关心消息是怎么发送、怎么接收等逻辑，EaseUI文档点击点击这里。
+      开发者可以基于EaseUI或者环信SDK开发自己的应用，前者因为把消息的发送接送等功能封装到了内部，集成时开发者不需要太关心消息是怎么发送、怎么接收等逻辑，EaseUI文档点击点击这里。
 
 - [常见问题](http://docs.easemob.com/im/500help)
-![](http://7xn4nm.com1.z0.glb.clouddn.com/ease.png)  
+![](http://winy.eicp.net/ease.png)  
 
 ## [LeanCloud](https://leancloud.cn/)
 - 功能特性：

@@ -8,7 +8,7 @@ description:
 ---
 
 Google最近将V4 Support Library拆分成5个子modules，每个Module可以被单独引用。
-![Alt text](http://7xn4nm.com1.z0.glb.clouddn.com/support-v4-all.png)
+![Alt text](http://winy.eicp.net/support-v4-all.png)
 
 
 ### 1. 子Module介绍
@@ -26,7 +26,7 @@ Google最近将V4 Support Library拆分成5个子modules，每个Module可以被
 
 
 ### 2. 子Module间依赖关系
- ![Alt text](http://7xn4nm.com1.z0.glb.clouddn.com/support-v4-dependency.png)
+ ![Alt text](http://winy.eicp.net/support-v4-dependency.png)
 
 PS：其中 support-annotations 为一些注解的声明库，如我们比较常用的 RequiresApi、UiThread、NonNull。
 
