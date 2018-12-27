@@ -22,7 +22,7 @@ Intent 分为两种类型：
     sendIntent.setAction(Intent.ACTION_SEND);
     sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);
     sendIntent.setType("text/plain");
-
+    
     // Verify that the intent will resolve to an activity
     if (sendIntent.resolveActivity(getPackageManager()) != null) {
         startActivity(sendIntent);
@@ -34,13 +34,13 @@ Intent 分为两种类型：
 
     Intent sendIntent = new Intent(Intent.ACTION_SEND);
     ...
-
+    
     // Always use string resources for UI text.
     // This says something like "Share this photo with"
     String title = getResources().getString(R.string.chooser_title);
     // Create intent to show the chooser dialog
     Intent chooser = Intent.createChooser(sendIntent, title);
-
+    
     // Verify the original intent will resolve to at least one activity
     if (sendIntent.resolveActivity(getPackageManager()) != null) {
         startActivity(chooser);
@@ -58,7 +58,7 @@ Intent 分为两种类型：
 
 ### 实现生命周期回调
  Activity 生命周期。
- ![Activity 生命周期](http://7xn4nm.com1.z0.glb.clouddn.com/activity_lifecycle.png)
+ ![Activity 生命周期](http://winy.eicp.net/activity_lifecycle.png)
 
 表 1. Activity 生命周期回调方法汇总表。
 
@@ -76,7 +76,7 @@ Intent 分为两种类型：
 
 ## Fragment
 
-![fragment 生命周期](http://7xn4nm.com1.z0.glb.clouddn.com/fragment_lifecycle.png)
+![fragment 生命周期](http://winy.eicp.net/fragment_lifecycle.png)
 
 
 ## Loader加载器

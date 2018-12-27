@@ -33,7 +33,7 @@ description:
 |ERROR	|F44336|
 |ASSERT	|FF6B68|
 
-![](http://7xn4nm.com1.z0.glb.clouddn.com/logcat.png)
+![](http://winy.eicp.net/logcat.png)
 
 
 参考资料：

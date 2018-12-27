@@ -29,7 +29,7 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
 ## Android Studio项目目录结构
 
 ### Project结构类型
-![Alt Text](http://7xn4nm.com1.z0.glb.clouddn.com/18501-35faada14c776733.png)
+![Alt Text](http://winy.eicp.net/18501-35faada14c776733.png)
 
 目录结构说明（详见[Android Project Files][2]）：
 
@@ -65,19 +65,19 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
         repositories {
             jcenter()
         }
-
+    
         dependencies {
             classpath 'com.android.tools.build:gradle:1.0.0'
         }
     }
-
+    
     apply plugin: 'com.android.application'
-
+    
     android {
         compileSdkVersion 19
         buildToolsVersion "19.0.0"
     }
-
+    
     allprojects {
         repositories {
             jcenter()
@@ -114,11 +114,11 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
 默认的module目录下的build.gradle文件内容如下：
 
     apply plugin: 'com.android.application'
-
+    
     android {
         compileSdkVersion 21
         buildToolsVersion "21.1.2"
-
+    
         defaultConfig {
             applicationId "cc.bb.aa.myapplication"
             minSdkVersion 10
@@ -133,7 +133,7 @@ Gradle是一个优秀的构建系统和构建工具，它允许通过插件创�
             }
         }
     }
-
+    
     dependencies {
         compile fileTree(dir: 'libs', include: ['*.jar'])
         compile 'com.android.support:appcompat-v7:21.0.3'
